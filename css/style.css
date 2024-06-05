@@ -1,0 +1,600 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container , #body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+#navBar{
+    display: flex;
+    width: 100vw;
+    min-width: 200px;
+    height: 12.5vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    justify-content: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.navLinks{
+    display: none;
+    list-style-type: none;
+    align-items: center;
+    height: 50%;
+    width: 70%;
+    justify-content: space-between;
+
+}
+
+.navLinks > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px ;
+}
+
+.navLinks > li{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 62px;
+    padding:  20px;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+
+.heroBanner{
+    position: relative;
+    width: 100%;
+    height: 87.5vh;
+    background: 
+    linear-gradient(-90deg, rgba(0, 10, 68, 0.2) 0%, rgba(0, 10, 68, 0.5) 50%, rgba(0, 10, 68, 1) 90% ),
+    url(../assets/heroImage.jpeg) center/cover no-repeat;
+    display: flex;
+}
+
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+    text-align: left;
+}
+
+.heroBtn{
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    top: 25px;
+}
+
+.heroContent > h1{
+    font-size: 2.25em;
+}
+
+.heroContent > p{
+    font-size: 1.2em;
+}
+
+.heroBtn{
+    font-size: 1em;
+}
+
+#about, #services, #collection, #products, #completedInstallations, #gallery, #contactUs{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent, .contactContent{
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.aboutBox1{
+    width: 100%;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.aboutBox1 > h2, .serviceTxt, .collectionTxt, .productTxt, .cpTxt, .gcTxt{
+    font-size: 2em;
+}
+
+.aboutBox1, .aboutBox2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutBox2{
+    display: none;
+    justify-content: space-around;
+
+}
+
+.teamImg{
+    width: 410px;
+    height: 40%;
+    border-radius: 10px;
+
+}
+
+.shortMenu{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    height: 31.5%;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0.5px 0.1px 0.1px 0.1px var(--withoutHover);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+    flex-direction: column;
+    gap: 4%;
+}
+
+.serviceCardImg{
+    background:url(../assets/technician.jpeg) center/cover no-repeat;
+    width: 100%;
+    height: 65vh;
+    transition: background-image 0.5s;
+}
+
+.serviceTxt, .collectionTxt, .productTxt, .cpTxt, .gcTxt{
+    height: 15vh;
+    align-content: center;
+}
+
+.serviceCards, .productCards, .sliderBox, .galleryBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.serviceCards{
+    height: 30vh;
+}
+.cards{
+    border-top: 7px solid var(--primary) ;
+    border: none;
+    padding-top: 2%;
+    gap: 10px;
+
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 98%;
+    font-weight: 100;
+    font-size: 16.9px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cards.hidden, .cardDetails.hidden{
+    display: none;
+}
+
+.cards >h3, .txtDetails > h3, .sliderTxt, .galleryTxt {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+
+#carousel{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 5%;
+}
+
+#carousel, .productCards, .sliderBox, .galleryBox{
+    overflow: hidden;
+    height: 70%;
+}
+
+.carousel-item{
+    justify-content: center;
+}
+.carousel-item, .cardDetails, .slider, .galleryInner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.itm{
+    display: none;
+}
+
+.cItemImg, .imgDetails{
+    width: 100%;
+}
+
+.cItemTxt{
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.cItemBtn, .productBtn{ 
+    width: 150 px;
+    height: 62px;
+    padding: 20px;
+    border-radius: 7px;
+    font-size: 18px;
+    background: transparent;
+}
+
+.cardDetails, .imgDetails{
+    border-radius: 15px;
+}
+.txtDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0 30px;
+    font-size: 17px;
+}
+.txtDetails, .imgDetails{
+    height: 50%;
+}
+
+.cardDetails{
+    animation: fadeInOut 2s;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.sliderBox, .galleryBox{
+    align-items: center;
+    justify-content: space-around;
+    height: 78%;
+    overflow: hidden;
+    position: relative;
+}
+.slider, .galleryInner{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 100%;
+    gap: 20%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliderImg, .galleryImg{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.sliderTxt, .galleryTxt{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sliderItems, .galleryItems{
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3%;
+    align-items: center;
+}
+
+.arrow{
+    cursor: pointer;
+    transform: translateY(-50%);
+    width: 50px;
+    z-index: 1;
+}
+
+.arrow.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.gcTxt{
+    text-align: center;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top:90%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.c-left{
+    left: 40%;
+}
+.c-right{
+    right: 40%;
+}
+
+#footer{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    gap: 40px;
+    align-items: center;
+}
+.footerDetails{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    gap: 2%;
+
+}
+
+.footerBox{
+    height: 100%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* align-items: center; */
+}
+
+
+.smallfb{
+    width: 50%;
+    height: 5vh;
+}
+.fbimg{
+    background: url(../assets/White\ logo.png) center/cover no-repeat;
+    height: 15vh;
+}
+
+.sm-text{
+    width: 45%;
+}
+.small{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fb1{
+    justify-content: center;
+    gap: 15px;
+}
+.fb2, .fb3{
+    align-items: left;
+    justify-content: center;
+    gap: 15px;
+}
+.footerLinks{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;;
+}
+.footerNav{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+.fb3{
+    gap: 25px;
+}
+.social-icons{
+    text-decoration: none;
+}
+.s-Icon{
+    display: flex;
+    gap: 20px;
+}
+
+.fb3 > h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.sBtn{
+    width: 175px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.2em;
+}
+
+.rights{
+    width: 75%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contactContent{
+    /* background-color: yellow; */
+    top: 10%;
+}
+.contactForm{
+    width: 60%;
+    background-color: green;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.formImg{
+    /* background-color: yellow; */
+    width: 190px;
+    height: 190px;
+}
+.formImg > img{
+    width: 180px;
+    height: 180px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    /* background-color: purple; */
+}
+input{
+    height: 20%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #DFF0FE;
+    outline: none;
+    font-size: 1.8em;
+    color: #DFF0FE;
+}
+input::placeholder{
+    color: #DFF0FE;
+}
+
+.formBtn{
+    margin-top: 50px;
+    width: 165px;
+    font-size: 1.2em;
+    padding: 15px 0;
+    border-radius: 12px;
+    border: none;
+    align-self: flex-end;
+}
+
+.greetingCard{
+    width: 40%;
+    background-color: pink;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+
+.greetingCard > h2{
+    font-size: 2em;
+    font-weight: 100;
+}
+.greetingCard > h2 > span{
+    font-size: 1.5em;
+}
+.greetingCard > h3{
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 100;
+    top: 93%;
+}
+
+button > a{
+    text-decoration: none;
+}
+
+.popUpClose{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    align-self: flex-end;
+    border: none;
+    background: transparent;
+    font-size: 3em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.li > a:hover{
+    color: var(--primary);
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--primary);
+    transition:  0.5s ;
+}

@@ -1,0 +1,486 @@
+@media (max-width: 450px){
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        height: 95%;
+        top: 2.5%;
+    }
+
+    .c-left{
+        left: 35%;
+    }
+    .c-right{
+        right: 35%;
+    }
+    .sm-Icon > svg, .social-icons > svg{
+        height: 30px;
+    }
+    .formImg{
+        width: 110px;
+        height: 110px;
+    }
+    .formImg > img{
+        width: 100px;
+        height: 100px;
+    }
+    input{
+        font-size: 1.3em;
+    }
+    .greetingCard > h2{
+        font-size: 1.3em;
+    }
+    .greetingCard > h3{
+        font-size: 1.2em;
+        top: 70%;
+    }
+    .formBtn{
+        width: 100px;
+        padding: 10px 0;
+    }
+
+    .greetingCard, .contactForm{
+        border-radius: 0;
+    }
+    .contactForm{
+        width: 60%;
+    }
+    .inputBox{
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+@media (max-height: 750px){
+    .smBtm{
+        margin-top: 20px;
+    }
+    .smTop{
+        margin-top: 15px;
+    }
+    .formImg{
+        width: 110px;
+        height: 110px;
+    }
+    .formImg > img{
+        width: 100px;
+        height: 100px;
+    }
+    input{
+        font-size: 1em;
+    }
+    .inputBox{
+        margin-top: -30px;
+        gap: 20px;
+    }
+    .greetingCard > h3, .greetingCard > h2{
+        font-size: 1.2em;
+        top: 85%;
+    }
+    .formBtn{
+        width: 70px;
+        padding: 10px 0;
+        margin-top: 1px;    
+    }
+    .contactContent{
+        top: 0;
+    }
+
+}
+@media (max-width: 915px){
+    .cards, .cardDetails {
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards{
+        padding-top: 5%;
+    }
+
+    #carousel, .productCards, .sliderBox, .galleryBox{
+        height: 80%;
+    }
+
+    .txtDetails{
+        padding: 0 60px;
+    }
+    .sliderBox, .galleryBox{
+        justify-content: space-between;
+    }
+    .slider{
+        width: 70%;
+    }
+    .galleryInner{
+        width: 100%;
+    }
+
+    .c-left{
+        left: 42%;
+    }
+    .c-right{
+        right: 42%;
+    }
+    .circle{
+        top: 96%;
+    }
+    .fb2{
+        display: none;
+    }
+    .footerBox{
+        width: 50%;
+    }
+
+    .sBtn{
+        width: 100px;
+        font-size: 1em;
+    }
+    .fb1{
+        gap: 2%;
+    }
+    .sm{
+        height: 20%;
+    }
+
+    .smallfb, .socials{
+        width: 100%;
+    }
+    .s-Icon{
+        gap: 1px;
+    }
+    .fb3 > h3{
+        font-size: 1.5em;
+    }
+    
+    .formImg{
+        width: 150px;
+        height: 150px;
+    }
+    .formImg > img{
+        width: 140px;
+        height: 140px;
+    }
+    input{
+        font-size: 1.3em;
+    }
+    .greetingCard > h2{
+        font-size: 1.3em;
+    }
+    .greetingCard > h3{
+        font-size: 1.2em;
+        top: 70%;
+    }
+    .formBtn{
+        width: 100px;
+        padding: 10px 0;
+        margin-top: 30px;
+    }
+    .contactContent{
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    .greetingCard, .contactForm{
+        background-color: var(--dark);
+        border-radius: 0;
+    }
+}
+
+
+/* Smaller Height Display */
+@media only screen and (max-height: 450px) {
+    .heroBanner{
+        height: 80vh;
+    }
+    #navBar{
+        height: 20vh;
+    }
+    .heroBtn{
+        top: 5px;
+    }
+    .aboutBox1 > h2{
+        font-size: 1.5em;
+    }
+    .aboutBox1{
+        padding: 0;
+    }
+    .heroContent > h1{
+        font-size: 1.5em;
+    }
+    .heroContent > p{
+        font-size: 1em;
+    }
+
+    .shortMenu{
+        width: 610px;
+    }
+    .formImg{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+
+    .formImg > img{
+        width: 90px;
+        height: 90px;
+    }
+    .inputBox{
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .formBtn{
+        margin-top: -10px ;
+        margin-bottom: 20px;
+    }
+    #footer{
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 452px) and (max-width: 915px){
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        height: 95%;
+        top: 2.5%;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 915px){
+    .shortMenu{
+        width: 450px;
+    }
+
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        height: 95%;
+        top: 2.5%;
+    }
+    .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .serviceCardImg, .serviceTxt, .serviceCards, .collectionTxt, .productTxt, .productCards, #carousel, .cpTxt, .sliderBox, .galleryBox{
+        width: 450px;
+        /* background-color: blanchedalmond; */
+    }
+        .sm-Icon > svg, .social-icons > svg{
+        height: 30px;
+    }
+    .fbimg{
+        height: 200px;
+    }
+    .s-Icon{
+        gap: 10px;
+    }
+    .fb3 > h3{
+        font-size: 2em;
+    }
+    .social-icons > svg{
+        height: 50px;
+    }
+    .sBtn{
+        width: 150px;
+        font-size: 1.2em;
+    }
+
+}
+
+/* Tablet Display */
+@media only screen and  (min-width:916px) {
+    #navBar{
+        justify-content: space-around;
+    }
+    #menuBtn{
+        display: none;
+    }
+    .navLinks{
+        display:flex;
+        text-align: center;
+    }
+
+    .heroContent > h1{
+        font-size: 3em;
+    }
+
+    .heroContent > h1{
+        font-size: 3em;
+    }
+    
+    .heroContent > p{
+        font-size: 1.3em;
+    }
+
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        top: 10%;
+    }
+
+    .aboutContent{
+        justify-content: space-around;
+    }
+
+    .aboutBox1{
+        height: 80vh;
+    }
+
+    .aboutBox1, .aboutBox2{
+        width: 48%;
+        padding: 20px 0px;
+    }
+
+    .aboutBox2{
+        display: flex;
+    }
+
+    .heroBtn{
+        top: 50px;
+    }
+
+    .aboutBox1 > h2 {
+        font-size: 2.75em;
+    }
+    
+     .box{
+        height: 28.9%;
+    }
+
+    .shortMenu{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+    .cards{
+        width: 25%;
+    }
+
+    .cardDetails{
+        width: 28%;
+    }
+
+    .b, .c, .itm, .cd{
+        display: flex;
+    }
+    .sliderImg, .galleryImg{
+        height: 80%;
+    }
+     
+    .txtDetails{
+        font-size: 1em  ;
+    }
+
+    .sliderItems > h3 {
+        width: 60%;
+        height: 15%;
+        gap: 5%;
+    }
+
+    .c-left{
+        left: 47%;
+    }
+    .c-right{
+        right: 47%;
+    }
+    .galleryBox, .sliderBox{
+        height: 98%;
+    }
+    .galleryImg, .sliderImg{
+        height: 90%;
+    }
+    .circle{
+        top: 98%;
+    }
+}
+
+/* Bigger Screen Display */
+@media only screen and (min-width: 1500px) {
+    .navLinks{
+        width: 50%;
+    }
+
+    .heroContent{
+        left: 20%;
+    }
+
+    .heroContent > h1{
+        font-size: 5em;
+    }
+
+    .aboutContent, .serviceContent, .collectionContent, .productContent
+    {
+        width: 80%;
+        left: 10%;
+    }
+    .cpTxt, .gcTxt{
+        width: 86%;
+    }
+    .cpContent, .galleryContent{
+        align-items: center;
+    }
+    .heroBtn{
+        width : 170px;
+        height : 62px;
+        padding : 20px;
+        border-radius: 7px;
+    }
+    .box{
+        height: 28.9%;
+    }
+    .aboutBox2 > .topTxt, .aboutBox2 > .btmTxt {
+        font-size: 25px;
+    }
+    .teamImg{
+        width: 80%;
+    }
+
+    .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+        padding-left: 5%;
+        padding-right: 4%;
+        gap: 2%;
+    }
+
+    .serviceCardImg{
+        height: 150vh;
+    }
+
+    .sliderItems > h3{
+        font-size: 1.5em;
+    }
+    
+    .c-left{
+        left: 48%;
+    }
+    .c-right{
+        right: 48%;
+    }
+    .fb1{
+        align-items: center;
+    }
+    .greetingCard > h3{
+        top: 90%;
+    }
+}
+
+@media (min-width: 916px) and (max-width: 1500px){
+    .productCards{
+        gap: 15px;
+    }
+    .cardDetails{
+        width: 50%;
+    }
+
+    .fb1{
+        align-items: left;
+    }
+    .smallfb{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1180px){
+    .shortMenu{
+        width: 510px;
+    }
+
+}
