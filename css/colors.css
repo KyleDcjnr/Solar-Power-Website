@@ -21,7 +21,7 @@
     color: var(--light);
 }
 
-#menuBtn, .serviceTxt, .collectionTxt, .txt, .productTxt, .cpTxt, .greetingCard > h3{
+#menuBtn, .serviceTxt, .collectionTxt, .txt, .productTxt, .CItxt, .greetingCard > h3{
     color: var(--primary);
 }
 
@@ -32,8 +32,9 @@
 .icon{
     background-color: var(--light);
 }
-#services, #products, #contactUs{
-    background-color: rgb(83, 83, 83, 0.1);
+#services, #products, #gallery{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, #ECECEC 10.5%, #ECECEC 91%, rgba(255, 255, 255, 0.3) 100%);
+    ;
 }
 .b, .c{
     color: rgb(83, 83, 83, 0.5);
@@ -53,7 +54,7 @@
     color: var(--primary);
 }
 
-.cardDetails, .contactForm{
+.cardDetails, .contactForm, .carouselBtn, .gcarouselBtn, .tcarouselBtn{
     background-color: var(--dark);
 }
 
@@ -81,4 +82,8 @@
 
 .social-icons :hover{
     fill: var(--primary);
+}
+
+.social-icons > img:hover{
+    background-color: var(--primary);
 }

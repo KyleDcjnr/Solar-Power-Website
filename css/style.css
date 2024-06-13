@@ -89,6 +89,9 @@
     position: relative;
     top: 25px;
 }
+button > a{
+    text-decoration: none;
+}
 
 .heroContent > h1{
     font-size: 2.25em;
@@ -102,13 +105,13 @@
     font-size: 1em;
 }
 
-#about, #services, #collection, #products, #completedInstallations, #gallery, #contactUs{
+#about, #services, #collection, #products, #contactUs, #completedInstallations, #gallery, #testimonials{
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-.aboutContent, .serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent, .contactContent{
+.aboutContent, .serviceContent, .collectionContent, .productContent, .contactContent, .CIcontent, .galleryContent, .testContent{
     display: flex;
     width: 90%;
     height: 80vh;
@@ -123,7 +126,7 @@
     height: 90vh;
 }
 
-.aboutBox1 > h2, .serviceTxt, .collectionTxt, .productTxt, .cpTxt, .gcTxt{
+.aboutBox1 > h2, .serviceTxt, .collectionTxt, .productTxt, .CItxt, .gcTxt{
     font-size: 2em;
 }
 
@@ -178,7 +181,7 @@
     border-radius: 50%;
 }
 
-.serviceContent, .collectionContent, .productContent, .cpContent, .galleryContent{
+.serviceContent, .collectionContent, .productContent,.CIcontent, .galleryContent, .testContent{
     flex-direction: column;
     gap: 4%;
 }
@@ -190,12 +193,12 @@
     transition: background-image 0.5s;
 }
 
-.serviceTxt, .collectionTxt, .productTxt, .cpTxt, .gcTxt{
+.serviceTxt, .collectionTxt, .productTxt, .gcTxt, .CItxt{
     height: 15vh;
     align-content: center;
 }
 
-.serviceCards, .productCards, .sliderBox, .galleryBox {
+.serviceCards, .productCards{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -227,7 +230,7 @@
     display: none;
 }
 
-.cards >h3, .txtDetails > h3, .sliderTxt, .galleryTxt {
+.cards >h3, .txtDetails > h3 {
     font-weight: 600;
     font-size: 1.6em;
 }
@@ -240,7 +243,7 @@
     gap: 5%;
 }
 
-#carousel, .productCards, .sliderBox, .galleryBox{
+#carousel, .productCards{
     overflow: hidden;
     height: 70%;
 }
@@ -248,7 +251,7 @@
 .carousel-item{
     justify-content: center;
 }
-.carousel-item, .cardDetails, .slider, .galleryInner{
+.carousel-item, .cardDetails{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -308,88 +311,9 @@
     }
 }
 
-
-.sliderBox, .galleryBox{
-    align-items: center;
-    justify-content: space-around;
-    height: 78%;
-    overflow: hidden;
-    position: relative;
-}
-.slider, .galleryInner{
-    display: flex;
-    flex-direction: row;
-    width: 70vw;
-    height: 100%;
-    gap: 20%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.sliderImg, .galleryImg{
-    width: 100%;
-    height: 90%;
-    border-radius: 15px;
-}
-
-.sliderTxt, .galleryTxt{
-    display: flex;
-    height: 20%;
-    width: 100%;
-    font-size: 1.2em;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.sliderItems, .galleryItems{
-    box-sizing: border-box;
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 3%;
-    align-items: center;
-}
-
-.arrow{
-    cursor: pointer;
-    transform: translateY(-50%);
-    width: 50px;
-    z-index: 1;
-}
-
-.arrow.disabled{
-    opacity: 0.5;
-    pointer-events: none;
-}
-
 .gcTxt{
     text-align: center;
 }
-
-.circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top:90%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 1em;
-    padding: 0.5em;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.c-left{
-    left: 40%;
-}
-.c-right{
-    right: 40%;
-}
-
 #footer{
     position: relative;
     width: 100vw;
@@ -421,7 +345,6 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    /* align-items: center; */
 }
 
 
@@ -443,6 +366,11 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.callus > a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .fb1{
@@ -480,6 +408,11 @@
     font-size: 2em;
     font-weight: 500;
 }
+.social-icons > img{
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+}
 
 .sBtn{
     width: 175px;
@@ -495,101 +428,6 @@
     padding-top: 20px;
 }
 
-.contactContent{
-    /* background-color: yellow; */
-    top: 10%;
-}
-.contactForm{
-    width: 60%;
-    background-color: green;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-}
-.formImg{
-    /* background-color: yellow; */
-    width: 190px;
-    height: 190px;
-}
-.formImg > img{
-    width: 180px;
-    height: 180px;
-}
-
-.inputBox{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 60%;
-    /* background-color: purple; */
-}
-input{
-    height: 20%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #DFF0FE;
-    outline: none;
-    font-size: 1.8em;
-    color: #DFF0FE;
-}
-input::placeholder{
-    color: #DFF0FE;
-}
-
-.formBtn{
-    margin-top: 50px;
-    width: 165px;
-    font-size: 1.2em;
-    padding: 15px 0;
-    border-radius: 12px;
-    border: none;
-    align-self: flex-end;
-}
-
-.greetingCard{
-    width: 40%;
-    background-color: pink;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-    text-align: center;
-}
-
-.greetingCard > h2{
-    font-size: 2em;
-    font-weight: 100;
-}
-.greetingCard > h2 > span{
-    font-size: 1.5em;
-}
-.greetingCard > h3{
-    position: absolute;
-    font-size: 1.5em;
-    font-weight: 100;
-    top: 93%;
-}
-
-button > a{
-    text-decoration: none;
-}
-
-.popUpClose{
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    align-self: flex-end;
-    border: none;
-    background: transparent;
-    font-size: 3em;
-    font-weight: 900;
-    cursor: pointer;
-}
 
 
 .li > a:hover{
