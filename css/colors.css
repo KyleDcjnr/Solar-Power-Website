@@ -64,7 +64,7 @@
 .circle.active{
     background-color: var(--withoutHover);
 }
-#footer{
+#footer, #credits{
     background-color: #000625;
        color: var(--light);
 }
@@ -84,6 +84,9 @@
     fill: var(--primary);
 }
 
-.social-icons > img:hover{
-    background-color: var(--primary);
+i {
+    color: white;
+}
+.social-icons > i:hover , #menuBtnClose:hover, .modalNav:hover{
+    color: var(--primary);
 }

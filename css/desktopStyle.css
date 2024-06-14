@@ -147,7 +147,7 @@
         width: 100%;
     }
     .s-Icon{
-        gap: 1px;
+        gap: 10px;
     }
     .fb3 > h3{
         font-size: 1.5em;
@@ -400,6 +400,12 @@
     .slide__span > p{
         font-size: 1.2em;
         line-height: 40px;
+    }
+    .etherLogo{
+        width: 20%;
+    }
+    #credits > h3{
+        font-size: 1.3em;
     }
 
 }

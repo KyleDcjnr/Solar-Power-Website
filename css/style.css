@@ -436,3 +436,16 @@ button > a{
     border-bottom: 1px solid var(--primary);
     transition:  0.5s ;
 }
+
+#credits{
+    display: flex;
+    justify-content: center ;
+    padding: 50px 0;
+}
+.etherLogo{
+    width: 40%;
+}
+
+#credits > h3 {
+    font-weight: 100;
+}
