@@ -1,5 +1,5 @@
 @media (max-width: 450px){
-    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent{
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent{
         height: 95%;
         top: 2.5%;
     }
@@ -24,29 +24,29 @@
         font-size: 1em;
     }
 
-    .carouselBox,.gcarouselBox, .tcarouselBox{
+    .carouselBox, .tcarouselBox{
         width: 80%;
     }
     .gcTxt, .CItxt{
         justify-content: center;
     }
-    .carouselBtn, .gcarouselBtn, .tcarouselBtn{
+    .carouselBtn, .tcarouselBtn{
         width: 30px;
         height: 30px;
     }
-    .carouselBtn > h2, .gcarouselBtn > h2, .tcarouselBtn > h2{  width: 20px;
+    .carouselBtn > h2, .tcarouselBtn > h2{  width: 20px;
         height: 20px;
         width: 20px;
         height: 20px;
     }
-    .carouselBtn > h2  > svg, .gcarouselBtn > h2 > svg, .tcarouselBtn > h2 > svg{
+    .carouselBtn > h2  > svg, .tcarouselBtn > h2 > svg{
         width: 20px;
         height: 20px;
     }
-    .carouselBtn--left, .gcarouselBtn--left, .tcarouselBtn--left{
+    .carouselBtn--left, .tcarouselBtn--left{
         left: -50px;
     }
-    .carouselBtn--right, .gcarouselBtn--right, .tcarouselBtn--right{
+    .carouselBtn--right, .tcarouselBtn--right{
         right: -50px;
     }
     .slide__txt{
@@ -70,31 +70,31 @@
     .carousel__image{
         height: 82.5%;
     }
-    .carouselBox,.gcarouselBox, .tcarouselBox{
+    .carouselBox, .tcarouselBox{
         width: 80%;
     }
-    .gcTxt, .CItxt{
+    .CItxt{
         justify-content: center;
         height: 25vh;
     }
 
-    .carouselBtn, .gcarouselBtn, .tcarouselBtn{
+    .carouselBtn, .tcarouselBtn{
         width: 30px;
         height: 30px;
     }
-    .carouselBtn > h2, .gcarouselBtn > h2, .tcarouselBtn > h2{  width: 20px;
+    .carouselBtn > h2, .tcarouselBtn > h2{  width: 20px;
         height: 20px;
         width: 20px;
         height: 20px;
     }
-    .carouselBtn > h2  > svg, .gcarouselBtn > h2 > svg, .tcarouselBtn > h2 > svg{
+    .carouselBtn > h2  > svg, .tcarouselBtn > h2 > svg{
         width: 20px;
         height: 20px;
     }
-    .carouselBtn--left, .gcarouselBtn--left, .tcarouselBtn--left{
+    .carouselBtn--left, .tcarouselBtn--left{
         left: -50px;
     }
-    .carouselBtn--right, .gcarouselBtn--right, .tcarouselBtn--right{
+    .carouselBtn--right, .tcarouselBtn--right{
         right: -50px;
     }
 
@@ -111,14 +111,14 @@
         padding-top: 5%;
     }
 
-    #carousel, .productCards, .carouselBox, .gcarourselBox{
+    #carousel, .productCards, .carouselBox{
         height: 80%;
     }
 
     .txtDetails{
         padding: 0 60px;
     }
-    .carouselBox, .gcarourselBox{
+    .carouselBox{
         justify-content: space-between;
     }
     .circle{
@@ -137,7 +137,6 @@
     }
     .fb1{
         gap: 10%;
-        /* background-color: red; */
     }
     .sm{
         height: 20%;
@@ -168,7 +167,7 @@
     .heroBtn{
         top: 5px;
     }
-    .aboutBox1 > h2, .CItxt, .serviceTxt, .collectionTxt, .productTxt, .gcTxt{
+    .aboutBox1 > h2, .CItxt, .serviceTxt, .collectionTxt, .productTxt{
         font-size: 1.5em;
     }
     .aboutBox1{
@@ -217,7 +216,7 @@
     .carousel__nav{
         height: 10vh;
     }
-    .carousel__image, .gcaroursel__image{
+    .carousel__image{
         height: 80%;
         object-fit: contain;
     }
@@ -229,7 +228,7 @@
 
 
 @media (min-width: 452px) and (max-width: 915px){
-    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent{
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent{
         height: 95%;
         top: 2.5%;
     }
@@ -241,16 +240,16 @@
         width: 450px;
     }
 
-    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent{
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent{
         height: 95%;
         top: 2.5%;
     }
-    .serviceContent, .collectionContent, .productContent, .Cicontent, .galleryContent{
+    .serviceContent, .collectionContent, .productContent, .Cicontent{
         display: flex;
         align-items: center;
     }
 
-    .serviceCardImg, .serviceTxt, .serviceCards, .collectionTxt, .productTxt, .productCards, #carousel, .CItxt, .carouselBox, .gcarouselBox{
+    .serviceCardImg, .serviceTxt, .serviceCards, .collectionTxt, .productTxt, .productCards, #carousel, .CItxt, .carouselBox{
         width: 450px;
     }
     .sm-Icon > svg, .social-icons > svg{
@@ -308,7 +307,7 @@
         font-size: 1.3em;
     }
 
-    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent{
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent{
         top: 10%;
     }
 
@@ -371,10 +370,6 @@
         height: 85%;
         align-self: center;
     }
-    .gcarousel__image{
-        width: 700px;
-        align-self: center;
-    }
     .carousel__caption{
         font-size: 1.3em;
     }
@@ -427,7 +422,7 @@
         font-size: 5em;
     }
 
-    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent, .testContent
+    .aboutContent, .serviceContent, .collectionContent, .productContent, .CIcontent, .testContent
     {
         width: 80%;
         left: 10%;
@@ -435,7 +430,7 @@
     .CItxt, .gcTxt{
         width: 100%;
     }
-    .CIcontent, .galleryContent, .testContent{
+    .CIcontent, .testContent{
         align-items: center;
     }
     .heroBtn{
@@ -454,7 +449,7 @@
         width: 80%;
     }
 
-    .serviceContent, .collectionContent, .productContent, .CIcontent, .galleryContent, .testContent{
+    .serviceContent, .collectionContent, .productContent, .CIcontent, .testContent{
         padding-left: 5%;
         padding-right: 4%;
         gap: 2%;
@@ -467,7 +462,7 @@
     .fb1{
         align-items: center;
     }
-    .carousel__image, .gcarousel__image{
+    .carousel__image{
         width: 900px;
         align-self: center;
         height: 90%;

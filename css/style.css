@@ -105,13 +105,13 @@ button > a{
     font-size: 1em;
 }
 
-#about, #services, #collection, #products, #contactUs, #completedInstallations, #gallery, #testimonials{
+#about, #services, #collection, #products, #contactUs, #completedInstallations, #testimonials{
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-.aboutContent, .serviceContent, .collectionContent, .productContent, .contactContent, .CIcontent, .galleryContent, .testContent{
+.aboutContent, .serviceContent, .collectionContent, .productContent, .contactContent, .CIcontent, .testContent{
     display: flex;
     width: 90%;
     height: 80vh;
@@ -126,7 +126,7 @@ button > a{
     height: 90vh;
 }
 
-.aboutBox1 > h2, .serviceTxt, .collectionTxt, .productTxt, .CItxt, .gcTxt{
+.aboutBox1 > h2, .serviceTxt, .collectionTxt, .productTxt, .CItxt{
     font-size: 2em;
 }
 
@@ -181,7 +181,7 @@ button > a{
     border-radius: 50%;
 }
 
-.serviceContent, .collectionContent, .productContent,.CIcontent, .galleryContent, .testContent{
+.serviceContent, .collectionContent, .productContent,.CIcontent, .testContent{
     flex-direction: column;
     gap: 4%;
 }
@@ -193,7 +193,7 @@ button > a{
     transition: background-image 0.5s;
 }
 
-.serviceTxt, .collectionTxt, .productTxt, .gcTxt, .CItxt{
+.serviceTxt, .collectionTxt, .productTxt, .CItxt{
     height: 15vh;
     align-content: center;
 }
@@ -311,9 +311,6 @@ button > a{
     }
 }
 
-.gcTxt{
-    text-align: center;
-}
 #footer{
     position: relative;
     width: 100vw;

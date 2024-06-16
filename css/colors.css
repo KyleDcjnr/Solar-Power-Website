@@ -32,7 +32,7 @@
 .icon{
     background-color: var(--light);
 }
-#services, #products, #gallery{
+#services, #products{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, #ECECEC 10.5%, #ECECEC 91%, rgba(255, 255, 255, 0.3) 100%);
     ;
 }
@@ -54,7 +54,7 @@
     color: var(--primary);
 }
 
-.cardDetails, .contactForm, .carouselBtn, .gcarouselBtn, .tcarouselBtn{
+.cardDetails, .contactForm, .carouselBtn, .tcarouselBtn{
     background-color: var(--dark);
 }
 
