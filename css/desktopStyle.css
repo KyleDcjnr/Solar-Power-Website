@@ -402,12 +402,14 @@
         line-height: 40px;
     }
     .etherLogo{
-        width: 20%;
+        width: 10%;
     }
     #credits > h3{
         font-size: 1.3em;
     }
-
+    .sm-text{
+        font-size: 14px;
+    }
 }
 
 

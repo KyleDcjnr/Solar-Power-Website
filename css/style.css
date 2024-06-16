@@ -359,6 +359,7 @@ button > a{
 
 .sm-text{
     width: 45%;
+    font-size: 12px;
 }
 .small{
     display: flex;
@@ -428,6 +429,9 @@ button > a{
     padding-top: 20px;
 }
 
+i{
+    font-size: 25px;
+}
 
 
 .li > a:hover{
@@ -441,9 +445,11 @@ button > a{
     display: flex;
     justify-content: center ;
     padding: 50px 0;
+    gap: 10px;
+    align-items: center;
 }
 .etherLogo{
-    width: 40%;
+    width: 30%;
 }
 
 #credits > h3 {
